@@ -1,1 +1,0 @@
-SELECT * from WA_telecom_churn
