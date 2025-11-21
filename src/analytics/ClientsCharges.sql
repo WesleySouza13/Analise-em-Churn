@@ -2,7 +2,7 @@
 SELECT 
 customerID, 
 MonthlyCharges,
-TotalCharges,
+TotalCharges
 CASE
     WHEN Churn = 'No' THEN 0 
     WHEN Churn = 'Yes' THEN 1
