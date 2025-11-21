@@ -1,13 +1,13 @@
 import numpy as np
 import pandas as pd 
 class DataValidation():
-    def unique(data:pd.DataFrame, column:str):
+    def unique(self, data:pd.DataFrame, column:str):
         if data is None:
             return ValueError('inpute um valor em data')
         response = data[column].nunique()
         if response < data.shape[1]:
             print(f'ha valores duplicados em {column} ')
-    def NaN(data: pd.DataFrame):
+    def NaN(self, data: pd.DataFrame):
         if data is None:
             return ValueError('inpute um valor em data') 
         try:
